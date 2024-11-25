@@ -182,6 +182,11 @@
     </div>
 
     <div x-show="searchBarOpen" class="w-full absolute top-0 bg-white border">
+        <button
+            x-on:click="searchBarOpen = false"
+            type="button"
+            class="absolute top-0 right-0 mr-5 mt-5 text-gray-500"
+        ></button>
         <div class="h-40 flex justify-center items-cneter">test</div>
     </div>
 </div>
