@@ -16,8 +16,11 @@
                                     {% endif %}
 
                                     <img
-                                        class="w-full h-full object-cover transition duration-1000 ease-in-out transform hover:scale-105"
-                                        src="{{ collection_image | image_url: 'medium' }}"
+                                        class="
+                                            w-full h-full object-cover transition duration-1000
+                                            ease-in-out transform hover:scale-105
+                                        "
+                                        src="{{ collection_image | img_url: 'medium' }}"
                                         alt="{{ collection.title | escape }}"
                                         width="100%"
                                         height="100%"
