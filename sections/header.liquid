@@ -182,16 +182,12 @@
     </div>
 
     <div x-show="searchBarOpen" class="w-full absolute top-0 bg-white border">
-        <button
-            x-on:click="searchBarOpen = false"
-            type="button"
-            class="absolute top-0 right-0 mr-5 mt-1 text-gray-500"
-        >
+        <button type="button" x-on:click="searchBarOpen = false" class="absolute top-0 right-0 mr-5 mt-5 text-gray-500">
             {% render 'icon-close' %}
         </button>
         <div class="h-40 flex justify-center items-center">
-            <form action="{{ routes.search_url }}" method="get">
-                <div class="relative text-gray-500 px-10">
+            <form action="{{ routes.search_url }}" method="get" class="flex-auto">
+                <div class="relative text-gray-500 px-10 border">
                     <input
                         type="search"
                         name="q"
