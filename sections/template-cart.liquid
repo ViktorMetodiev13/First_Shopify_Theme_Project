@@ -28,9 +28,11 @@
                                     <a href="{{ item.url }}">
                                         {% if item.image %}
                                             <img
-                                                src="{{ item | img_url: 'small' }}"
+                                                src="{{ item | image_url: 'small' }}"
                                                 alt="{{ item.title | escape }}"
                                                 class="w-20 h-20 object-cover border"
+                                                width="80"
+                                                height="80"
                                             >
                                         {% else %}
                                             {{ 'product-1' | placeholder_svg_tag: 'w-20 h-20 object-cover border' }}
