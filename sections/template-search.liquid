@@ -17,7 +17,7 @@
         </div>
 
         {% if search.performed %}
-            {% if search.results > 0 %}
+            {% if search.results.size > 0 %}
                 <div class="max-w-6xl mx-auto">
                     <div class="grid gird-cols-1 md:grid-cols-3 gap-4">
                         {% for item in search.results %}
