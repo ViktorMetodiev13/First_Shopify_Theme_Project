@@ -8,23 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-<<<<<<< Updated upstream
-  "sections": {
-    "template": {
-      "type": "template-cart",
-      "blocks": {
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {}
-        },
-        "update-button": {
-          "type": "update_button",
-          "settings": {}
-        },
-        "checkout-button": {
-          "type": "checkout_button",
-          "settings": {}
-=======
     "sections": {
         "template": {
             "type": "template-cart",
@@ -34,24 +17,19 @@
                 },
                 "update-button": {
                     "type": "update_button"
-            },
+                },
                 "checkout-button": {
                     "type": "checkout_button"
                 }
             },
-            "block_order": ["subtotal", "update-button", "checkout-button"]
->>>>>>> Stashed changes
+            "block_order": [
+                "subtotal",
+                "update-button",
+                "checkout-button"
+            ]
         }
-      },
-      "block_order": [
-        "subtotal",
-        "update-button",
-        "checkout-button"
-      ],
-      "settings": {}
-    }
-  },
-  "order": [
-    "template"
-  ]
+    },
+    "order": [
+        "template"
+    ]
 }
